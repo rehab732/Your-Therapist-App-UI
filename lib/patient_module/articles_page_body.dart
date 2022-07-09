@@ -1,8 +1,6 @@
 
 import 'package:flutter/material.dart';
 
-import 'big_text.dart';
-import 'small_text.dart';
 
 
 class ArticlesPageBody extends StatefulWidget {
@@ -81,11 +79,13 @@ class _ArticlesPageBodyState extends State<ArticlesPageBody> {
               ),
               child: Column(
                 children: [
-                  BigText(text: "When you love someone with depression"),
+                  Text('When you love someone with depression',style: TextStyle(color: Colors.white,fontSize: 20,overflow: TextOverflow.ellipsis),),
+              
                   SizedBox(height: 2),
                   Row(
                     children: [
-                      SmallText(text: "How to support your loved one?"),
+                      Text('How to support your loved one?',style:TextStyle(color: Colors.white,fontSize: 18,height: 1.2,)),
+                   
                     ],
                   ),
                   SizedBox(

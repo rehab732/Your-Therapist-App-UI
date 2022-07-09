@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_ui/patient_module/chart.dart';
 
-import '../aweerenesspages/big_text.dart';
-import '../aweerenesspages/small_text.dart';
 
 class homepage extends StatelessWidget {
   @override
@@ -103,11 +101,13 @@ class homepage extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  BigText(text: "just for testing the position "),
+                  Text( "just for testing the position ",style: TextStyle(color: Colors.white,fontSize: 20,overflow: TextOverflow.ellipsis),),
                   SizedBox(height: 2),
                   Row(
                     children: [
-                      SmallText(text: "salsabil mohamed hemeda mmm?"),
+                      Text("salsabil mohamed hemeda mmm?",style:TextStyle(
+                        color: Colors.white,fontSize: 18,height: 1.2,
+                      )),
                     ],
                   ),
                   SizedBox(

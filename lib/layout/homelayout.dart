@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../aweerenesspages/main_awareness_page.dart';
+import '../patient_module/articles_page_body.dart';
 import '../patient_module/home.dart';
 import '../patient_module/mood.dart';
 import '../patient_module/profile.dart';
@@ -17,7 +17,7 @@ class Homelayout extends StatefulWidget{
 class _HomelayoutState extends State<Homelayout> {
   @override
   int currentindex=0;
-   List<Widget> screens = [homepage(),sessions(),MainAwarenessPage(),mood(),editprofile()];
+   List<Widget> screens = [homepage(),sessions(),ArticlesPageBody(),mood(),editprofile()];
   List<String> titels = ["Home", "My Sessions", "Awareness","Mood","profile"];
   Widget build(BuildContext context) {
 
